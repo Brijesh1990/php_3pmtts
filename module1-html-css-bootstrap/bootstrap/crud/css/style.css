@@ -1,0 +1,42 @@
+body 
+{
+margin: 0;
+padding: 0;
+overflow-x: hidden;
+box-sizing: border-box;
+background-color: lightgray;
+
+}
+#ems-header
+{
+width: 100%;
+height: auto;
+margin: auto;
+background-color: #10b382;    
+}
+
+#ems-content
+{
+width: 100%;
+height: auto;    
+}
+.ems-sidebar
+{
+height: 100vh;    
+}
+.sidebar-navlinks li 
+{
+display: block;
+padding: 20px 2px;
+font-size: 18px;
+}
+.sidebar-navlinks a 
+{
+text-decoration: none;
+list-style-type: none;
+color: white;    
+}
+.left
+{
+background-color: #10b382 !important;    
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<title>Employee management systems  Crud App</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<!-- stylesheet -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+<!-- js -->
+<script src='js/main.js'></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</head>
+<body>
+<!-- ems header -->
+ <section id="ems-header" class="continer-fluid p-3">
+ <div class="row">
+    <div class="col-md-10"><b class="ms-5">Employee MS</b> <span class="ms-5 fs-6">Welcome to Admin</span></div>
+    <div class="col-md-2">
+        <button type="button" class="btn btn-sm btn-danger shadow">Logout <span class="bi bi-power"></span></button>
+    </div>
+ </div>   
+ </section>
+ <!-- admin content -->
+ <section id="ems-content">  
+<div class="row">    
+<!-- ems sidebar -->
+ <div class="ems-sidebar col-md-2 bg-dark text-white">
+    <ul class="sidebar-navlinks">
+        <li><a href="#"><span class="bi bi-speedometer"></span> Dashboard</a></li>
+        <li><a href="#"><span class="bi bi-person"></span> Employee</a></li>
+        <li><a href="#"><span class="bi bi-calendar"></span> Department</a></li>
+        <li><a href="#"><span class="bi bi-currency-dollar"></span> Loan</a></li>
+        <li><a href="#"><span class="bi bi-currency-dollar"></span> Salary</a></li>
+        <li><a href="#"><span class="bi bi-gear"></span> Setting</a></li>
+    </ul>
+ </div>
+<!-- ems dashboard -->
+<div class="ems-dashboard col-md-10 bg-white p-5">
+   <h2 class="text-center">Manage Employee <span class="bi bi-person"></span></h2> 
+   <hr class="border w-25 mx-auto  border-1 border-dark" />
+   <div class="container">
+   <div class="row">
+    <div class="col-md-9">
+    <input type="text" placeholder="Search by Department Name *" class="form-control w-75" />
+    </div>
+    <div class="col-md-3">
+    <button type="button" class="float-end btn btn-md btn-primary text-white" data-bs-toggle="modal" data-bs-target="#emp">Add New Employee  <span class="bi bi-plus"></span></button>
+  
+    </div>
+    <table class="table table-responsive mt-5">
+        <tr align="center">
+            <th>SNo</th>
+            <th>Name</th>
+            <th>Image</th>
+            <th>Department</th>
+            <th>DOB</th>
+            <th>Action</th>
+            
+        </tr>
+        <tr align="center">
+            <td>1</td>
+            <td>Kaushik</td>
+            <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5MeWifMa5ACyADYgQhuQcpNfftzBrU9wpWg&s" class="img-fluid rounded-circle w-25" /></td>
+            <td>IT</td>
+            <td>04/07/1990</td>
+            <td><button type="button" class="btn btn-sm btn-success rounded-0">View</button> | <button type="button" class="btn btn-sm btn-primary rounded-0">Edit</button> | <button type="button" class="btn btn-sm btn-warning rounded-0">Salary</button> | <button type="button" class="btn btn-sm btn-danger rounded-0">Leave</button></td>
+        </tr>
+
+        <tr align="center">
+            <td>1</td>
+            <td>Kaushik</td>
+            <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5MeWifMa5ACyADYgQhuQcpNfftzBrU9wpWg&s" class="img-fluid rounded-circle w-25" /></td>
+            <td>IT</td>
+            <td>04/07/1990</td>
+            <td><button type="button" class="btn btn-sm btn-success rounded-0">View</button> | <button type="button" class="btn btn-sm btn-primary rounded-0">Edit</button> | <button type="button" class="btn btn-sm btn-warning rounded-0">Salary</button> | <button type="button" class="btn btn-sm btn-danger rounded-0">Leave</button></td>
+        </tr>
+
+        <tr align="center">
+            <td>1</td>
+            <td>Kaushik</td>
+            <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5MeWifMa5ACyADYgQhuQcpNfftzBrU9wpWg&s" class="img-fluid rounded-circle w-25" /></td>
+            <td>IT</td>
+            <td>04/07/1990</td>
+            <td><button type="button" class="btn btn-sm btn-success rounded-0">View</button> | <button type="button" class="btn btn-sm btn-primary rounded-0">Edit</button> | <button type="button" class="btn btn-sm btn-warning rounded-0">Salary</button> | <button type="button" class="btn btn-sm btn-danger rounded-0">Leave</button></td>
+        </tr>
+
+
+    </table>
+    </div>
+
+   </div> 
+   </div>
+</div>
+</div>
+</section>
+
+<!-- add new employee form -->
+
+<div class="modal fade" role="dialog" id="emp">
+    <div class="modal-dialog" style="min-width: 60%; margin-top: 4%;">
+        <div class="modal-content">
+            <div class="row">
+                <div class="col-md-5 p-5 left">
+                    <h1 class="text-center fs-3">Add EMS systems</h1>
+                    <p class="text-center"><img src="https://cdn-icons-png.flaticon.com/512/682/682464.png" class="img-fluid" /></p>
+                </div>
+                <div class="col-md-7 p-5">
+                    <form>
+                        <div class="form-group mt-3">
+                            <input type="text" placeholder="Name *" required class="form-control" />
+                        </div>
+                        
+                        <div class="form-group mt-3">
+                            <input type="text" placeholder="Name *" required class="form-control" />
+                        </div>
+                        
+                        <div class="form-group mt-3">
+                            <input type="text" placeholder="Name *" required class="form-control" />
+                        </div>
+                        
+                        <div class="form-group mt-3">
+                            <input type="text" placeholder="Name *" required class="form-control" />
+                        </div>
+                        
+                        <div class="form-group mt-3">
+                            <input type="text" placeholder="Name *" required class="form-control" />
+                        </div>
+                        
+                        <div class="form-group mt-3">
+                            <input type="text" placeholder="Name *" required class="form-control" />
+                        </div>
+                        
+                        <div class="form-group mt-3">
+                            <input type="submit" value="Add Employee" placeholder="Name *" required class="btn btn-md btn-dark text-white" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

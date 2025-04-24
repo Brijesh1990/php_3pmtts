@@ -1,0 +1,52 @@
+body 
+{
+margin: 0;
+padding: 0;
+overflow-x: hidden;
+box-sizing: border-box;
+background: url('https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcm0xNTMtdG9vbi0wNl8xLmpwZw.jpg') no-repeat;
+background-size: cover;
+background-position: center;
+background-attachment: fixed;    
+}
+.navbar ul 
+{
+margin-left: 20%;    
+}
+.navbar ul li 
+{
+display: inline-block;
+padding: 0px 25px;    
+}
+.navbar a 
+{
+text-decoration: none;
+list-style-type: none;
+color: white;
+font-size: 18px;    
+}
+.dropdown:hover .dropdown-menu
+{
+display: block;
+}
+
+@media only screen and (min-width:320px) and (max-width:480px)
+{
+    .navbar ul 
+    {
+    margin-left: 0%;    
+    }
+    .navbar ul li 
+    {
+    display:block;
+    padding: 5px 10px;    
+    }   
+    .content h1 
+    {
+     font-size: 25px !important;   
+    } 
+    .account-img
+    {
+     display: none;   
+    }
+}
