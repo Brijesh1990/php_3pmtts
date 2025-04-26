@@ -1,0 +1,62 @@
+php stands for php:hypertext preprocessor
+php first time release in 1986 by rasmus landroef 
+php is used for web developments
+php is server side scripting language 
+php is loosly typed of language
+examples : $a=10; $name="brijesh";
+php is support all os(windows , ios , linux , android)
+php is support cross operating plateform
+php is support all server 
+examples : iis | apache | tomcat
+php support all tools for run on server 
+examples : xampp | wamp | lamp
+
+xampp => server tools 
+
+X =>cross plateform(support all OS) 
+A =>apache(server)
+M =>Mysql(database)
+P =>Perl(proceedurals based language)
+P =>php 
+
+Wamp =>
+w =>windows only
+A =>apache(server)
+M =>Mysql(database)
+P =>php 
+
+Lamp =>
+L => linux/uinix  
+w =>windows only
+A =>apache(server)
+M =>Mysql(database)
+P =>php 
+
+php file extension is .php or .php3 or .phtml
+
+php version ....
+
+1) php3 => support (POP) 
+2) php4 => support (POP)
+3) php5 => support (OOP)
+4) php7 => support (OOP)
+5) php8 => support (OOP)
+
+php used delemeter meanse how we start php and closed of php 
+
+examples : 1) standard delemeter 
+
+              <?php 
+                 
+                statements;
+               
+              ?>
+
+               1) direct output or sorthand delemeter 
+
+              <?=
+                 
+                 statements;
+               
+               ?>
+           
