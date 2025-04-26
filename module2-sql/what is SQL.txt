@@ -317,10 +317,60 @@ or
 select  pid,pname,photo,price, qty, descriptions,catname,subcatname from products join category on products.catid=category.catid join subcategory on products.subcatid=subcategory.subcatid;
 
 
+inner join :: 
 
+ join and inner join both are same 
 
-                        
-             
-             
+  
+1) select  products.*,catname,subcatname from products inner join category on products.catid=category.catid inner join subcategory on products.subcatid=subcategory.subcatid;
+
+or
+
+select  pid,pname,photo,price, qty, descriptions,catname,subcatname from products inner join category on products.catid=category.catid inner join subcategory on products.subcatid=subcategory.subcatid;
+
+                       
  
+Outer Join ::            
+       
+  a) left outer join 
+  b) right outer join 
+  c) full outer join 
          
+ 
+  a) left outer join  : left join are used to join more than one tables if data matched from first table of left rows with second table left rows it will be join and return value if not matched data return null values.
+
+
+     
+1) select  products.*,catname,subcatname from products left join category on products.catid=category.catid left join subcategory on products.subcatid=subcategory.subcatid;
+
+or
+
+select  pid,pname,photo,price, qty, descriptions,catname,subcatname from products join category on products.catid=category.catid join subcategory on products.subcatid=subcategory.subcatid;
+
+        
+
+ b) right outer join  : right join are used to join more than one tables if data matched from second table of right rows with first table right rows it will be join and return value if not matched data return null values.
+
+
+     
+1) select  products.*,catname,subcatname from products right join category on products.catid=category.catid right join subcategory on products.subcatid=subcategory.subcatid;
+
+or
+
+select  pid,pname,photo,price, qty, descriptions,catname,subcatname from products right join category on products.catid=category.catid right join subcategory on products.subcatid=subcategory.subcatid;
+
+      
+c) full join = left join + right join 
+
+   Note : mysql is not supportd full join 
+
+
+
+
+d) cross join : either data matched or not its return a cross of one table to another tables and return all dublicate value.
+
+
+examples :  select * from products cross join  category;
+
+          
+ 
