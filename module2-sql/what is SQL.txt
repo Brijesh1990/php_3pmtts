@@ -372,5 +372,8 @@ d) cross join : either data matched or not its return a cross of one table to an
 
 examples :  select * from products cross join  category;
 
+
+
+
           
  
