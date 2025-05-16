@@ -16,7 +16,7 @@ switch($grade)
 
                 default:
 
-                echo "<h1>Your gradee is npot found please contact with admin</h1>";
+                echo "<h1>Your grade is not found please contact with admin</h1>";
                 break;
             
     
