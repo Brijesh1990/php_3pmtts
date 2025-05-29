@@ -5,6 +5,7 @@ session_start();
 if(isset($_POST["login"]) || $_POST["chk"])
 {
     $em=$_POST["email"];
+    $name=$_POST["name"];
     $pwd=$_POST["password"];
     $chk=$_POST["chk"];
 
@@ -54,6 +55,10 @@ if(isset($_POST["login"]) || $_POST["chk"])
     <form method="post">
         <div class="form-group mt-3">
             <input type="text" name="email" value="<?php echo $_COOKIE["email"];?>" placeholder="email" required>
+        </div>
+
+        <div class="form-group mt-3">
+            <input type="hidden" name="name"  placeholder="email" required>
         </div>
         
         <div class="form-group mt-3">
