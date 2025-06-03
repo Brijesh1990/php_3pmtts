@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<title>Page Title</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<link rel='stylesheet' type='text/css' media='screen' href='css/gray.css'>
+<style>
+    #content 
+    {
+     width: 50%;
+     height: auto;
+     margin: auto;
+     margin-top: 5%;   
+    }
+</style>
+</head>
+<body>
+<div id="content">
+<form method="post" id="frm" action="welcome.html">
+    <label>Email *</label>
+    <br>
+    <input type="text" placeholder="Email *" data-bvalidator="required,email">
+    <br>
+    <label>Password *</label>
+    <br>
+    <input type="text" placeholder="Password *" data-bvalidator="required,minlen[3],maxlen[8]">
+    <br>
+    <label>Name *</label>
+    <br>
+    <input type="text" placeholder="Name *" data-bvalidator="required,alpha">
+    <br>
+    <label>Phone *</label>
+    <br>
+    <input type="text" placeholder="Phone *" data-bvalidator="required,minlen[10],maxlen[10],digit">
+    <br>
+    <label>age *</label>
+    <br>
+    <input type="text" placeholder="age *" data-bvalidator="required,minlen[0],maxlen[100]">
+    <br>
+    <label>Pin *</label>
+    <br>
+    <input type="text" placeholder="Pin *" data-bvalidator="required,minlen[6],maxlen[6],digit">
+    <br>
+    <input type="submit" value="Register" />
+</form>
+</div>
+<script src='https://code.jquery.com/jquery-3.7.1.js'></script>
+<script src='js/jquery.bvalidator.js'></script>
+<script src='js/default.min.js'></script>
+<script src='js/gray.js'></script>
+<script>
+    $(document).ready(function(){
+        $("#frm").bValidator();
+    })
+</script>
+</body>
+</html>

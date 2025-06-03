@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='https://code.jquery.com/jquery-3.7.1.js'></script>
+</head>
+<body>
+
+    <script>
+      $(document).ready(function(){
+       $("#btn3").click(function(){
+        $("table").append("<tr><td>Raj</td><td>raj@gmail.com</td><td>84152121</td><td>28</td><td>male</td></tr>")
+       })
+      })
+    </script>
+    <style>
+        #content 
+        {
+         width: 50%;
+         height: auto;
+         margin: auto;   
+        }
+    </style>
+    <div id="content">
+    <button type="button" id="btn3">Add Row</button>
+   <table width="70%" border="1" celllpadding="5" cellspacing="5">
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>Age</th>
+        <th>Gender</th>
+    </tr>
+    <tr>
+        <td>Brijesh</td>
+        <td>Brijesh@gmail.com</td>
+        <td>94112121</td>
+        <td>35</td>
+        <td>Male</td>
+    </tr>
+   </table>    
+</div>
+</body>
+</html>

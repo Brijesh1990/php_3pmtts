@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='https://code.jquery.com/jquery-3.7.1.js'></script>
+</head>
+<body>
+
+    <script>
+      $(document).ready(function(){
+      $("#btn1").dblclick(function(){
+        $("#para").fadeToggle("slow");
+      });
+
+      $("#btn2").hover(function(){
+        $("#para").fadeToggle("slow");
+      });
+
+      $("#btn3").click(function(){
+        $("#para").fadeToggle("slow");
+      })
+      })
+    </script>
+    <style>
+        #content 
+        {
+         width: 50%;
+         height: auto;
+         margin: auto;   
+        }
+    </style>
+    <div id="content">
+    <p id="para"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, reiciendis! Fugiat, odio atque. Quae quo facilis perspiciatis, delectus itaque maiores dolore in animi quasi illo, placeat omnis odit hic aspernatur?</p>    
+    <button type="button" id="btn1">Hide</button>
+    <button type="button" id="btn2">Show</button>
+    <button type="button" id="btn3">Toggle</button>
+    </div>
+</body>
+</html>

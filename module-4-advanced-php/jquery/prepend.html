@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='https://code.jquery.com/jquery-3.7.1.js'></script>
+</head>
+<body>
+
+    <script>
+      $(document).ready(function(){
+       $("#btn3").click(function(){
+        $("b").prepend("<b>Brijesh &nbsp</b>")
+       })
+      })
+    </script>
+    <style>
+        #content 
+        {
+         width: 50%;
+         height: auto;
+         margin: auto;   
+        }
+    </style>
+    <div id="content">
+    <b>Ravindra bhai Pandey</b>
+    <br><br>
+    <button type="button" id="btn3">Prepend Name</button>
+    </div>
+</body>
+</html>
