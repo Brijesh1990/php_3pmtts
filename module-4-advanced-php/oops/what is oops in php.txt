@@ -1,0 +1,35 @@
+what is oops in php ?
+ oops stands for object oriented programming structured language 
+ oops features is 
+
+ class 
+ object 
+ inheritance
+ polymorphism 
+ encapsulation 
+ abstractions
+
+ oops used inside of php5 or php7 or php8
+ MVC architecture is support oops 
+ MVC makes secured  web apps or website inside of php 
+
+
+oops provides some features as functinality that are 
+
+a) access modifier 
+b) data hiding 
+c) access specifier 
+d) constructor 
+e) destructure 
+f) traits 
+g) interface 
+h) final keyword 
+i) pseudo variables
+
+
+
+
+
+
+
+
